@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00f7ff;
+}
+.game_over{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    border-radius: 5px;
+    display: none;
+}
+.game_over h1{
+    color: #00f;
+    padding: 10px 0;
+}
+.human,.beXO{
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.human button,.beXO button{
+    padding: 5px 10px;
+    background-color: #00f7ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.human h3,.beXO h3{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 7px;
+    font-size: 1.5rem;
+}
+.beXO{
+    display: none;
+}
+
+/* game with bot */
+.game_board{
+    display: none;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    animation: 3s infinite linear;
+    padding: 7px;
+    border-color: transparent;
+}
+@keyframes light{
+    0%{border-color: red;}
+    18%{border-color: #06e906;}
+    36%{border-color: red;}
+    52%{border-color: #06e906;}
+    70%{border-color: red;}
+    88%{border-color: #06e906;}
+    100%{border-color: red;}
+}
+.detals{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: 257px;
+}
+.player{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+.player span{
+    width: 100%;
+    justify-content: center;
+    padding: 7px;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 550;
+    z-index: 1;
+}
+.turn-player{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #56baed;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.game-area{
+    margin-top: 5px;
+}
+section{
+    display: flex;
+}
+section div{
+    margin: 3px;
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    color: #56baed;
+    text-align: center;
+    line-height: 80px;
+}
+#playerX{
+    left: 0;
+}
+#playerO{
+    left: 50%;
+}
+#replay{
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    display: none;
+}
+#replay h3{
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+#replay a{
+    color: #fff;
+    background-color: #56baed;
+    padding: 7px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#winnerIn{
+    text-transform: uppercase;
+}

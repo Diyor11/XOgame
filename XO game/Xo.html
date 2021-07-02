@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOgame</title>
+    <script src="https://kit.fontawesome.com/dae6e10071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="human">
+        <h3>Select player</h3>
+        <button id="player1">1 Player</button>
+        <button id="player2">2 Player</button>
+    </div>
+    <div class="beXO">
+        <h3>Select which want</h3>
+        <button id="beX">(X) player</button>
+        <button id="beO">(O) player</button>
+    </div>
+    <div class="game_board">
+        <div class="detals">
+            <div class="player">
+                <div class="turn-player" id="playerX"></div>
+                <span class="x-turn">X's turn</span>
+                <span class="o-turn">O's turn</span>
+            </div>
+        </div>
+        <div class="game-area" id="game_area">
+            <section>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </section>
+            <section>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+            </section>
+            <section>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                <div class="box9"></div>
+            </section>
+        </div>
+    </div>
+    <div id="replay">
+        <h3>
+            Player <span id="winnerIn"></span> won the game
+        </h3>
+        <a href="#" id="reBtn">Replay</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
